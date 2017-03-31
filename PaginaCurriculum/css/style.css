@@ -1,0 +1,292 @@
+
+		* { margin: 0; padding: 0; }
+        
+		body { 
+		font: 16px Helvetica, Sans-Serif; 
+		line-height: 24px; 
+		background-image: url("001.jpg"); 
+		background-attachment: fixed;
+		background-size: cover;
+		
+		}
+       
+		
+        
+		#container { 
+		width: 800px; 
+		margin: 40px auto 60px;
+		
+
+		
+		}
+     				
+		#pic { 
+		float: right; 
+		margin: -30px 0 0 0; 
+		
+		}
+ 		
+		
+		h1 { 
+		margin: 0 0 16px 0; 
+		padding: 0 0 16px 0; 
+		font-size: 42px; 
+		font-weight: bold;
+		color:#08214D;
+		letter-spacing: -5px; 
+		border-bottom: 15px ridge #08214D; 
+		}
+        
+		h2 { 
+		font-size: 20px; 
+		margin: 0 0 6px 0; 
+		position: relative; 
+		color:#08214D;
+		}
+        
+		h2 span { 
+		position: absolute; 
+		bottom: 0; 
+		right: 0; 
+		font-style: italic; 
+		font-family: Georgia, Serif; 
+		font-size: 16px; 
+		color: #08214D; 
+		font-weight: normal; 
+		}
+        
+		p { 
+		color:#08214D;
+		margin: 0 0 16px 0; 
+		
+		}
+        
+		
+		a {
+		color: #F57307; 
+		text-decoration: none; 
+		
+		}
+        
+		 
+		
+        
+		ul {
+		margin: 0 0 32px 17px; 
+		}
+        
+		#objective { 
+		width: 500px; 
+		float: left; 
+		}
+        
+		#objective p { 
+		font-family: Georgia, Serif; 
+		font-style: italic; 
+		color:#08214D; 
+		}
+        
+		dt { 
+		color:#08214D;
+		font-style: italic; 
+		font-weight: bold; 
+		font-size: 18px; 
+		text-align: right;
+		padding: 0 26px 0 0; 
+		width: 150px;
+		float: left; 
+		height: 410px;
+		border-right: 5px solid #228BB1;  
+		}
+        
+		dd { 
+		width: 600px; 
+		float: right; 
+		color: #F57307;
+		}
+        .clear { clear: both; }
+		dd.clear { 
+		float: none; 
+		margin: 0; 
+		height: 20px; 
+		}
+		
+		
+		
+/* PARTE DE LA FOTO CON EL ENLACE */
+
+.capaFoto{
+	
+	float: right;
+	width: 217px;
+	height: 292px;	
+	margin: 10px auto 0 auto;
+	position: relative;
+    overflow: hidden;
+	border-style: ridge;
+	border-top-width: 1em;
+	border-right-width: 2em;
+	border-bottom-width:10px;
+	border-left-width: 10px;
+	border-color: #08214D;
+}
+
+
+
+.capaAuxImagen{
+	position:absolute;
+	width: 217px;
+	height: 292px;
+	z-index: 1;
+}
+
+.capaAuxTexto{
+	top:-230px;
+	color:white;
+	background-color:#F5F5DC;
+	width: 217px;
+	height: 150px;
+	z-index: 10;
+	display:table;
+    position: absolute;
+    transition: all 1s ease;
+}
+.capaAuxTexto2{
+    top:292px;
+	color:white;
+	background-color:green;
+	width: 217px;
+	height: 150px;
+	margin: 0 auto 0 auto;
+	display:table;
+    transition: all 1s ease;
+    z-index:10;
+    position:absolute;
+}
+.capaFoto:hover .capaAuxTexto{
+    
+    top: -75px;
+}	
+.capaFoto:hover .capaAuxTexto2{
+    
+    top: 150px;
+}	
+.enlace{
+	font-size:15px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	
+}
+
+.enlace a:link{
+	
+	font-weight: bold;
+}	
+	
+
+
+
+/* LEER MAS O MENOS */
+
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Ver Datos';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Ocultar';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .9em;
+  color: #F57307;
+  font-size: .9em;
+  line-height: 2;
+  position: relative;
+  left: -130px;
+  top:50px;
+  border: 2px solid #F57307;
+  border-radius: .25em;
+  
+}
+
+
+/*otro menu en el header*/
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+ 
+}
+
+.fixed-nav-bar li,
+.fixed-nav-bar a {
+  height: 70px;
+  line-height: 30px;
+}
+/* MENU */
+
+.menu {
+  width: 950px;
+  margin: 5px auto;
+}
+
+.menu a,
+.menu a:visited {
+  color: #666666;
+}
+
+.menu a:hover,
+.menu a:target {
+  color: #333333;
+}
+
+.menu-items {
+  float: right;
+  display: inline-block;
+  padding-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.menu-items li a {
+  padding: 0 10px;
+}
+
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu-items a {
+  text-decoration: none;
+}
