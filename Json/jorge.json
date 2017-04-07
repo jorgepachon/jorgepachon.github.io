@@ -1,44 +1,44 @@
 {
-	"Actividades": 
-				[
-					{
-						"titulo": "Curriculum Vitae",
-						"FechaRealizacion": "08/12/2016",
-						"Descripcion": "Web Curriculum Vitae",
-						"link": "https://jorgepachon.github.io/PaginaCurriculum/index1.html",
-						"MiembrosGrupo": "MiembrosGrupo: Individual",
-						"AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
-						"Disponible": "Si",
-						"Destacado": "no",
-						"Responsive": "Responsive: No",
-						"visualizacionRecomendada": "Visualización Recomendada: 1920x1200"
-						
-					}, 
-					{
-						"titulo": "Golsario Cocina",
-						"FechaRealizacion": "30/10/2016",
-						"Descripcion": "Glosario con 10 recetas de cocina.",
-						"link": "https://jorgepachon.github.io/GlosarioCocina/index2.html",
-						"MiembrosGrupo": "MiembrosGrupo: Individual",
-						"AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
-						"Disponible": "Si",
-						"Destacado": "no",
-						"Responsive": "Responsive: No",
-						"visualizacionRecomendada": "Visualización Recomendada: 1920x1200"
-						
-					}, 
-					{
-						"titulo": "WebGrupal",
-						"FechaRealizacion": "27/11/2016",
-						"Descripcion": "Sitio web de temática de compra-venta de coches",
-						"link": "https://jorgepachon.github.io/WebGrupo/index.html",
-						"MiembrosGrupo": "MiembrosGrupo: David Sebastian, Daniel De la Iglesia",
-						"AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
-						"Disponible": "Si",
-						"Destacado": "No",
-						"Responsive": "Responsive: No",
-						"visualizacionRecomendada": "Visualización Recomendada: 1920x1200"
-						
-					}
-				]
+  "Actividades": [
+    {
+      "titulo": "Golsario Cocina",
+      "FechaRealizacion": "30/10/2016",
+      "Descripcion": "Glosario con 10 recetas de cocina.",
+      "link": "https://jorgepachon.github.io/GlosarioCocina/index2.html",
+      "MiembrosGrupo": "MiembrosGrupo: Individual",
+      "AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
+      "Disponible": "Disponible: Si",
+      "Destacado": "No",
+      "Responsive": "Responsive: No",
+      "visualizacionRecomendada": "Visualización Recomendada: 1920x1200"
+
+    },
+    {
+      "titulo": "Curriculum Vitae",
+      "FechaRealizacion": "08/12/2016",
+      "Descripcion": "Web Curriculum Vitae",
+      "link": "https://jorgepachon.github.io/PaginaCurriculum/index1.html",
+      "MiembrosGrupo": "MiembrosGrupo: Individual",
+      "AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
+      "Disponible": "Disponible: Si",
+      "Destacado": "No",
+      "Responsive": "Responsive: No",
+      "visualizacionRecomendada": "Visualización Recomendada: 1920x1200"
+
+    },
+    {
+      "titulo": "WebGrupal",
+      "FechaRealizacion": "27/11/2016",
+      "Descripcion": "Sitio web de temática de compra-venta de coches",
+      "link": "https://jorgepachon.github.io/WebGrupo/index.html",
+      "MiembrosGrupo": "MiembrosGrupo: David Sebastian, Daniel De la Iglesia",
+      "AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
+      "Disponible": "Disponible: Si",
+      "Destacado": "No",
+      "Responsive": "Responsive: No",
+      "visualizacionRecomendada": "Visualización Recomendada: 1920x1200"
+
+    }
+  ]
 }
+

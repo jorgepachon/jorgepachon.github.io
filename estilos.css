@@ -6,11 +6,9 @@
 
 body{
 	font-size:14px;
-	color:#666;
-	background-image: url("img/fondo.jpg");
-	
+	color:#bac42f;
+	background-image: url("img/code.jpg");
 	background-size: cover;
-	
 	font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -126,12 +124,16 @@ body{
 }
 
 
-h1{
-	color:#fff;
-	font-size:30px;
-	font-weight:normal;
-	padding:60px 0 20px;
-	text-align:center;
+h1 {
+    color: #68B3AE;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 60px 0 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    background-color:white;
 }
 
 h2{
@@ -217,12 +219,10 @@ color:#fff;
 	opacity:0.9;
 	margin-bottom:5%;
 }
-section{
-	
-	background-image:-moz-radial-gradient(center -100px 45deg, circle farthest-corner, #444 150px, #111 300px);
-	background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#444), to(#111));
-	background-color:black;
-	text-align:center;
+section {
+   
+   
+    text-align: center;
 }
 
 #id02 .myPointer{
@@ -231,8 +231,7 @@ section{
 	opacity:0.5;
 }
 #id02{
-	background-color:black;
-	width:100%;
+   	width:100%;
 }
 #id02:hover .sobremi{
 	transition:3s ease;
@@ -245,10 +244,14 @@ section{
 	opacity:1;
 	
 }
-.sobreMi{
-	opacity:0;
-	font-family: 'Gloria Hallelujah', cursive;
-	
+.sobreMi {
+    opacity: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    background-color: white;
+   
 }
 @media screen and (min-width:320px) and (max-width:700px){
 .stylePadre{
