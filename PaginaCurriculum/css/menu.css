@@ -1,126 +1,410 @@
-#nav,#nav ul {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}
-#nav {
-    background: url('menu_bg.png')no-repeat scroll 0 0 transparent;
-    clear: both;
-    font-size: 12px;
-    height: 58px;
-    padding: 0 0 0 9px;
-    position: relative;
-    width: 957px;
-}
-#nav ul {
-    background-color: #222;
-    border:1px solid #222;
-    border-radius: 0 5px 5px 5px;
-    border-width: 0 1px 1px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    left: -9999px;
-    overflow: hidden;
-    position: absolute;
-    top: -9999px;
-    z-index: 2;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url("../font-awesome/css/font-awesome.css");
 
-    -moz-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    -o-transform: scaleY(0);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.nombre {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color:white;
+    font-size: 80px;
+    padding-top: 150px;
+}
 
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+    background: #E4E4E4;
+    box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 1);
+}
+
+    .fixed-nav-bar li,
+    .fixed-nav-bar a {
+        height: 50px;
+        line-height: 50px;
+    }
+
+.menu {
+    width: 100%;
+    margin: 15px auto;
+   
+}
+
+    .menu a,
+    .menu a:visited {
+        color: #666666;
+    }
+
+        .menu a:hover,
+        .menu a:target {
+            color: #333333;
+        }
+
+.menu-items {
+    float: right;
+    display: inline-block;
+    padding-right: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
     
 }
-#nav li {
-    background: url('menu_line.png')no-repeat scroll right 5px transparent;
-    float: left;
-    position: relative;
-}
-#nav li a {
-    color: #FFFFFF;
-    display: block;
-    float: left;
-    font-weight: normal;
-    height: 30px;
-    padding: 23px 20px 0;
-    position: relative;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #000000;
-}
-#nav li:hover > a {
-    color: #00B4FF;
-}
-#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
-    background: none repeat scroll 0 0 #121212;
-    outline: 0 none;
-}
-#nav li:hover ul.subs {
-    left: 0;
-    top: 53px;
-    width: 180px;
 
-    -moz-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    -o-transform: scaleY(1);
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    .menu-items li a {
+        padding: 0 10px;
+        
+    }
+
+    .menu-items li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
+
+    .menu-items a {
+        text-decoration: none;
+        
+    }
+
+.galeria {
+    margin: 90px auto 0;
+    width: 58%;
+    transform-style: preserve-3d;
+    height: 30%;
 }
-#nav ul li {
-    background: none;
+
+    .galeria:before {
+        content: '';
+        padding-top: 56.25%;
+        display: inline-block;
+        width: 0;
+    }
+
+.card {
+    background-size: 2px 2px, cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     width: 100%;
-}
-#nav ul li a {
-    float: none;
-}
-#nav ul li:hover > a {
-    background-color: #121212;
-    color: #00B4FF;
-}
-#lavalamp {
-    background: url('lavalamp.png') no-repeat scroll 0 0 transparent;
-    height: 16px;
-    left: 43px;
+    height: 100%;
     position: absolute;
-    top: 0px;
-    width: 64px;
-
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    font-family: 'Great Vibes';
 }
 
-#lavalamp:hover {
-    -moz-transition-duration: 3000s;
-    -ms-transition-duration: 3000s;
-    -o-transition-duration: 3000s;
-    -webkit-transition-duration: 3000s;
-    transition-duration: 3000s;
+.slider-1 {
+    background-image: url(), url(../images/slider/images.jpg);
 }
 
-#nav li:nth-of-type(1):hover ~ #lavalamp {
-    left: 40px;
+.slider-2 {
+    background-image: url(), url(../images/slider/city-cars-traffic-lights.jpg);
 }
-#nav li:nth-of-type(2):hover ~ #lavalamp {
-    left: 173px;
+
+.slider-3 {
+    background-image: url(), url(../images/slider/pexels-photo-140945.jpeg);
 }
-#nav li:nth-of-type(3):hover ~ #lavalamp {
-    left: 287px;
+
+.subtitle {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
 }
-#nav li:nth-of-type(4):hover ~ #lavalamp {
-    left: 402px;
+
+.card p {
+    text-align: center;
+    color: #fff;
+    font-size: 5vw;
+    line-height: 1.3;
+    margin-top: 3vh;
 }
-#nav li:nth-of-type(5):hover ~ #lavalamp {
-    left: 501px;
+
+input {
+    visibility: hidden;
 }
-#nav li:nth-of-type(6):hover ~ #lavalamp {
-    left: 592px;
+
+.label-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    color: #fff;
+    font-size: 4vw;
+    line-height: 15vh;
+    text-align: right;
+    height: 15vh;
+    width: 4vw;
+    cursor: pointer;
+    opacity: .2;
+    transition: .5s linear;
 }
-#nav li:nth-of-type(7):hover ~ #lavalamp {
-    left: 692px;
+
+.otra + .otra,
+#first:checked ~ .slider-3 .afin,
+#second:checked ~ .slider-1 .afin,
+#third:checked ~ .slider-2 .afin {
+    right: 0;
+    text-align: left;
 }
-#nav li:nth-of-type(8):hover ~ #lavalamp {
-    left: 794px;
+
+#first:checked ~ .slider-1 .otra,
+#second:checked ~ .slider-2 .otra,
+#third:checked ~ .slider-3 .otra {
+    display: block;
+}
+
+#first:checked ~ .slider-1 .afin,
+#second:checked ~ .slider-2 .afin,
+#third:checked ~ .slider-3 .afin,
+:not(:checked) ~ .otra {
+    display: none;
+}
+
+.card:hover .label-slider {
+    animation: pulso 1.5s infinite alternate;
+}
+
+    .card:hover .label-slider + .label-slider {
+        animation-delay: .5s;
+    }
+
+    .card:hover .label-slider:hover {
+        color: #333333;
+        opacity: 1;
+    }
+
+#first:checked ~ .slider-2,
+#second:checked ~ .slider-3,
+#third:checked ~ .slider-1 {
+    animation: 1s fuera-izq;
+    animation-fill-mode: forwards;
+    transform-origin: center left;
+    z-index: 2;
+}
+
+#first:checked ~ .slider-3,
+#second:checked ~ .slider-1,
+#third:checked ~ .slider-2 {
+    animation: 1.5s fuera-dch;
+    animation-fill-mode: forwards;
+    transform-origin: center right;
+    z-index: 2;
+}
+
+#first:checked ~ .slider-1,
+#second:checked ~ .slider-2,
+#third:checked ~ .slider-3 {
+    animation: 2s central;
+    animation-fill-mode: forwards;
+    transform-origin: center center;
+    z-index: 3;
+}
+
+@keyframes fuera-izq {
+    0% {
+        transform: scale(1) translatex(0%);
+    }
+
+    70% {
+        transform: scale(.9) translatex(-100%);
+    }
+
+    100% {
+        transform: scale(.9) translatex(-7%);
+    }
+}
+
+@keyframes fuera-dch {
+    0% {
+        transform: scale(1) translatex(0%);
+    }
+
+    70% {
+        transform: scale(.9) translatex(100%);
+    }
+
+    100% {
+        transform: scale(.9) translatex(7%);
+    }
+}
+
+@keyframes central {
+    0% {
+        transform: scale(.8);
+        z-index: 1;
+    }
+
+    80% {
+        transform: scale(.5);
+        z-index: 3;
+    }
+
+    100% {
+        transform: scale(1);
+        z-index: 3;
+    }
+}
+
+@keyframes pulso {
+    50% {
+        opacity: .7;
+    }
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #dedede;
+}
+
+.topHome {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    background: #40474c;
+}
+
+    .topHome .fa-2x {
+        font-size: 20px;
+        color: #fff;
+        margin: 4px;
+    }
+/** 
+ * ===================================================================
+ * Estilos - Paralax 
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.paralax {
+   /* padding-top: 0px;*/
+    width: 1900px;
+    margin: 40px -550px 60px;
+   
+    background-image: url('../images/paralax.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.paralax-blink {
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: #FDFDFD !important;
+}
+/** 
+ * ===================================================================
+ * Estilos - formulario contacto
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+form {
+    max-width: 1000px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+    form input,
+    form textarea {
+        border: 0;
+        outline: 0;
+        padding: 1em;
+        display: block;
+        background: #f1f2f7;
+        width: 100%;
+        margin-top: 1em;
+        font-family: 'Merriweather', sans-serif;
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        resize: none;
+    }
+
+        form input:focus,
+        form textarea:focus {
+            -moz-box-shadow: 0 0px 2px #40474c !important;
+            -webkit-box-shadow: 0 0px 2px #40474c !important;
+            box-shadow: 0 0px 2px #40474c !important;
+        }
+
+    form #input-submit {
+        color: white;
+        background: #40474c;
+        cursor: pointer;
+    }
+
+        form #input-submit:hover {
+            -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+            -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+            box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+        }
+
+    form textarea {
+        height: 150px;
+    }
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf input {
+    visibility: visible;
 }
